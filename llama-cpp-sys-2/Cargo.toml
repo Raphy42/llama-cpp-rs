@@ -16,6 +16,7 @@ include = [
     "/llama.cpp/ggml-alloc.h",
     "/llama.cpp/ggml-backend.c",
     "/llama.cpp/ggml-backend.h",
+    "/llama.cpp/ggml-common.h",
     "/llama.cpp/ggml-backend-impl.h",
     "/llama.cpp/ggml-cuda.cu",
     "/llama.cpp/ggml-cuda.h",
@@ -41,6 +42,7 @@ include = [
 [build-dependencies]
 bindgen = { workspace = true }
 cc = { workspace = true, features = ["parallel"] }
+cmake = { version = "0.1.50" }
 
 [features]
 cublas = []
